@@ -5,7 +5,7 @@ describe("Tests para ExplorerService", () =>
     test("Requerimiento: filterByMission", () => {
         const explorers = [{ mission: "node" }, { mission: "java" }, { mission: "node" }];
         const explorersInNode = ExplorerService.filterByMission(explorers, "node");
-        expect(explorersInNode.length).toBe(2999);
+        expect(explorersInNode.length).toBe(2);
     })
 
     test("Requerimiento: getAmountOfExplorersByMission", () => {
