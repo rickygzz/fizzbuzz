@@ -29,4 +29,28 @@ describe("Tests para FizzbuzzService", () =>
 
         expect(validatedExplorer.trick).toBe("FIZZBUZZ");
     });
+
+    test("Requerimiento: applyValidationInNumber", () => {
+        const ret = FizzbuzzService.applyValidationInNumber(1);
+
+        expect(ret).toBe(1);
+    });
+
+    test("Requerimiento: applyValidationInNumber", () => {
+        const ret = FizzbuzzService.applyValidationInNumber(3);
+
+        expect(ret).toBe("FIZZ");
+    });
+
+    test("Requerimiento: applyValidationInNumber", () => {
+        const ret = FizzbuzzService.applyValidationInNumber(5);
+
+        expect(ret).toBe("BUZZ");
+    });
+
+    test("Requerimiento: applyValidationInNumber", () => {
+        const ret = FizzbuzzService.applyValidationInNumber(15);
+
+        expect(ret).toBe("FIZZBUZZ");
+    });
 });
